@@ -12,7 +12,6 @@ depends=(
     'alsa-utils'
     'parted'
     'psmisc'
-    'whiptail'
     'dconf'
     'i2c-tools'
     'rfkill'
@@ -26,7 +25,7 @@ optdepends=(
     'picom: compositor'
     'ufw: firewall'
     'docker: containers'
-    ' reflector: mirror ranking'
+    'reflector: mirror ranking'
     'nvidia: NVIDIA GPU support'
 )
 provides=('parch-config')
