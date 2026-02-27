@@ -33,11 +33,6 @@ conflicts=('raspi-config')
 source=("git+https://github.com/parchlinux/parch-config.git")
 sha256sums=('SKIP')
 
-pkgver() {
-    cd "${srcdir}/${pkgname}"
-    git describe --long --tags 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' || echo "1.0"
-}
-
 package() {
     install -dm750 "${pkgdir}/etc/sudoers.d/"
     install -dm755 "${pkgdir}/usr/lib/parch-config"
